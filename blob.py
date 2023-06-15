@@ -1,8 +1,8 @@
 # d = {1: 'A', 2: 'B'}
-#
+
 # for i in d.values():
 #     print(i)
-#
+
 # print(d.values())
 # import datetime
 #
@@ -21,23 +21,24 @@
 # print(type(datetime))
 
 
-# from datetime import *
+from datetime import *
 import datetime as dt
 from dateutil import relativedelta
+import pandas as pd
 
 # close_date = '2099/12/31'
 # open_date = '2000/01/01'
-#
 # format_date = '%Y/%m/%d'
+
 #
 # datetime1 = datetime.strptime(close_date, format_date)
 # datetime2 = datetime.strptime(open_date, format_date)
 #
 # t = datetime.today()
-
-# print(datetime2.date())
-# print(datetime1.date())
-# print(date.today())
+#
+# # print(datetime2.date())
+# # print(datetime1.date())
+# # print(date.today())
 # cd= (t - datetime2).days // 365
 # rd= (datetime1 - t).days // 365
 # print(f'remaining days: {rd}')
@@ -49,17 +50,19 @@ from dateutil import relativedelta
 # print(delta1.years, 'remaining Years')
 
 
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 # fruits.remove('banana')
 # print(fruits)
 #
 # fruits[2]='grapes'
 # print(fruits)
 
-p = [i for i in fruits if i != 'banana']
-
-l = ['grapes' if i == 'kiwi' else i for i in fruits]
-
+# p = [i for i in fruits if i != 'banana']
+#
+# l = ['grapes' if i == 'kiwi' else i for i in fruits]
+# l = ['grapes' if i == 'kiwi' else i for i in fruits if i!='banana']
+#
+#
 print(l)
 #
 # y = [i * 7 for i in range(778) if i * 7 <= 777]
