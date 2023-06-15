@@ -58,6 +58,10 @@ fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 
 p = [i for i in fruits if i != 'banana']
 
-y = [i * 7 for i in range(778) if i * 7 <= 777]
+l = ['grapes' if i == 'kiwi' else i for i in fruits]
 
-print(y)
+print(l)
+#
+# y = [i * 7 for i in range(778) if i * 7 <= 777]
+#
+# print(y)
